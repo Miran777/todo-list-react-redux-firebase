@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&family=Roboto+Slab:wght@400;600&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #00BDD6;
+}
+
+button, input, a {
+  font-family: 'Kavoon', cursive;
+  letter-spacing: 2px;
+}
+
+input, button {
+  outline: none;
+}
+
+h1 {
+font-weight: 900;
+color: #764ABC;
+letter-spacing: 3px;
+}
+
+.Main {
+  position: relative;
+  padding-top: 6rem;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Kavoon', cursive;
+  letter-spacing: 2px;
+  color: #764ABC;
+}
+
+.wrap-1 {
+  position: relative;
+  min-height: 300px;
+  width: 600px;
+  border-radius: 2.4rem 1rem 1rem 2.4rem;
+  background-color: white;
+  box-shadow: 0 0 10px #764ABC;
+}
+
+.wrap {
+  position: relative;
+  top: 8px;
+  left: -8px;
+  min-height: 300px;
+  width: 600px;
+  background-color: white;
+  border-radius: 2.4rem 1rem 1rem 2.4rem;
+  transform: perspective(200px);
+  box-shadow: 0 0 10px #764ABC;
+  padding: 1rem 0;
+}
+
+.content {
+  padding-left: 3rem;
+}
+
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+li {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0;
+}
+
+.delete {
+  color: red;
+  cursor: pointer;
+}
+
+input:checked + span {
+  text-decoration-line: line-through;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.button {
+  padding: 5px 20px;
+  background-color: #764ABC;
+  font-size: 1.2rem;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: .1s;
+  cursor: pointer;
+  opacity: .8;
+}
+
+.button:hover {
+  opacity: 1;
+  box-shadow: 0 0 5px #764ABC;
+}
+
+.blue-btn {
+  background-color: #00BDD6;
+}
+.blue-btn:hover {
+  box-shadow: 0 0 5px #00BDD6;
+}
+
+.input-field {
+  display: flex;
+  gap: 3rem;
+}
+
+.input-in {
+  width: 12rem;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px #00BDD6;
+  font-size: 1.2rem;
+}
+
+.form-wrap {
+  padding-top: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  padding: 2rem 4rem;
+  background-color: white;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px #764ABC;
+}
+
+.form-input {
+  min-width: 250px;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  border: none;
+  box-shadow: 0px 2px 10px #764ABC;
+}
+
+.form-link {
+  font-size: 1.2rem;
+  color: red;
+}
+
+.form-button {
+  cursor: pointer;
+  width: 120px;
+  align-self: center;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #764ABC;
+  color: white;
+  transition: .1s;
+  opacity: .8;
+}
+
+.form-button:hover {
+  box-shadow: 0px 0px 10px #764ABC;
+  opacity: 1;
+}
+
+.btn-log-out {
+  cursor: pointer;
+  position: fixed;
+  padding: 5px 10px;
+  font-size: 1rem;
+  top: 10px;
+  right: 20px;
+  border: none;
+  border-radius: 2px;
+  background-color: white;
+  color: #764ABC;
+  transition: .1s;
+  opacity: .8;
+}
+
+.btn-log-out:hover {
+  box-shadow: 0px 0px 10px #764ABC;
+  border: 0.3px solid #764ABC;
+  opacity: 1;
+}
+
+@media screen and (max-width: 819px) {
+  body {
+    background-color: white;
+  }
+
+  .form-wrap {
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .form {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    gap: 40px;
+  }
+  .form-input {
+    font-size: 2rem;
+  }
+  .form-button{
+    font-size: 2rem;
+    width: 300px;
+    padding: 10px 20px;
+  }
+  .form-h1 {
+    font-size: 4rem;
+  }
+  .form-link {
+    font-size: 2rem;
+  }
+  .Main {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    padding: 0;
+    align-items: flex-start;
+  }
+
+  .wrap-1 {
+    padding: 5rem 1rem 1rem 1rem;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .wrap {
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    width: 100%;
+  }
+  .btn-log-out {
+    font-size: 3rem;
+    z-index: 100;
+  }
+  .content h1 {
+    font-size: 5rem;
+  }
+
+  .checkbox {
+    width: 2rem;
+    height: 2rem;
+  }
+  .add-todo {
+    margin-bottom: 2rem;
+  }
+
+  @media screen and (max-width: 609px) {
+    .content h1 {
+      font-size: 4rem;
+    }
+
+    .btn-log-out {
+      font-size: 2rem;
+    }
+
+    .input-field {
+      display: flex;
+      flex-direction: column;
+      
+    }
+    .input-in {
+      padding: 10px ;
+      min-width: 300px;
+      font-size: 2rem;
+    }
+    .input-field button {
+      max-width: 200px;
+      font-size: 2rem;
+    }
+  }
+
+}
